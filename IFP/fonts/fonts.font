@@ -246,6 +246,39 @@ fontfiles = {
 		files = {"fonts/ctp_fonts/Fondamento-RegularIFP.otf"}
 	}	
 }
+fontfiles = {
+	name="GitanLatin-BoldIFP"
+	always_load = yes
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_spanish" }
+		files = {"fonts/ctp_fonts/GitanLatin-BoldIFP.otf"}
+	}	
+}
+fontfiles = {
+	name="GitanLatin-BoldItalicIFP"
+	always_load = yes
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_spanish" }
+		files = {"fonts/ctp_fonts/GitanLatin-BoldItalicIFP.otf"}
+	}	
+}
+
+fontfiles = {
+	name="GitanLatin-ItalicIFP"
+	always_load = yes
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_spanish" }
+		files = {"fonts/ctp_fonts/GitanLatin-ItalicIFP.otf"}
+	}	
+}
+fontfiles = {
+	name="GitanLatin-RegularIFP"
+	always_load = yes
+	group = {
+		languages = { "l_english" "l_french" "l_german" "l_spanish" }
+		files = {"fonts/ctp_fonts/GitanLatin-RegularIFP.otf"}
+	}	
+}
 #######################################################################
 #######################################################################
 #######################################################################
@@ -268,22 +301,22 @@ font = {
 
 	fontstyle = {
 		style = regular
-		fontfiles = "Gitan-Regular"
+		fontfiles = "GitanLatin-RegularIFP"
 	}
 
 	fontstyle = {
 		style = bold
-		fontfiles = "Gitan-Bold"
+		fontfiles = "GitanLatin-BoldIFP"
 	}
 
 	fontstyle = {
 		style = italic
-		fontfiles = "Gitan-Italic"
+		fontfiles = "GitanLatin-ItalicIFP"
 	}
 
 	fontstyle = {
 		style = bold|italic
-		fontfiles = "Gitan-Bold-Italic"
+		fontfiles = "GitanLatin-BoldItalicIFP"
 	}
 
 	underlineformats = {
