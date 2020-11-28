@@ -243,7 +243,7 @@ fontfiles = {
 	always_load = yes
 	group = {
 		languages = { "l_english" "l_french" "l_german" "l_spanish" }
-		files = {"fonts/ctp_fonts/Fondamento-RegularIFP.otf"}
+		files = {"fonts/ctp_fonts/Fondamento-RegularIFP.ttf"}
 	}	
 }
 fontfiles = {
