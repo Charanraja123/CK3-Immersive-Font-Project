@@ -338,7 +338,6 @@ font = {
 }
 
 ## For map names
-## Changed from Vanilla
 
 font = {
 	name = "MapFont"

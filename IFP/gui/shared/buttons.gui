@@ -221,6 +221,8 @@ types Buttons
     type button_sidepanel_right = button_standard_hover {
         minimumsize = { -1 20 }
 
+        using = tooltip_es
+
         flowcontainer = {
             resizeparent = yes
             margin = { 3 3 }
@@ -317,12 +319,15 @@ types Buttons
         framesize = { 198 53 }
 
         buttonText = {
-            text_flavor = {
+            text_single = {
                 size = { 100% 100% }
                 autoresize = no
                 margin = { 10 0 }
                 align = center|nobaseline
-                default_format = "#low"
+                default_format = "#Medium"
+				using = Font_Type_Flavor
+				fontsize = 18
+				margin_top = 5
             }
         }
     }
@@ -365,7 +370,7 @@ types Buttons
                 autoresize = no
                 margin = { 10 0 }
                 align = center|nobaseline
-                default_format = "#low"
+                default_format = "#medium"
             }
         }
     }
@@ -667,6 +672,7 @@ types Buttons
         button_back = {
             name = "button_back"
             shortcut = "go_back"
+            shortcut = "go_back_2"
             clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_close"
 
             using = Animation_ShowHide_Standard
@@ -802,6 +808,12 @@ types Buttons
         downpressedframe = 2
     }
 
+    type button_list_expand = checkbutton {
+        size = { 18 18 }
+        texture = "gfx/interface/buttons/button_tree_expand.dds"
+        framesize = { 36 36 }
+    }
+
     type button_standard_back = button_standard {
         block "text" {
             text = "BACK_LABEL"
@@ -814,6 +826,8 @@ types Buttons
             alwaystransparent = yes
         }
     }
+
+    
 
     # Marker used to show current selected Option
     type button_active_marker = icon {
@@ -832,7 +846,7 @@ types Buttons
 
     # For dropdown filter
     type button_drop = button_normal {
-        size = { 225 33 }
+        size = { 100% 33 }
         button_trigger = none
         gfxtype = framedbuttongfx
         effectname = "NoHighlight"
@@ -853,6 +867,7 @@ types Buttons
                 margin = { 15 0 }
                 margin_right = 25
                 align = left|nobaseline
+                default_format = "#clickable"
             }
         }
     }
@@ -888,6 +903,14 @@ types Buttons
         size = { 65 65 }
         onclick = "[DefaultOnFaithClick(Faith.GetID)]"
         tooltipwidget = { faith_tooltip_click = {} }
+        texture = "[Faith.GetIcon]"
+    }
+
+    type button_religion_icon_ruler_designer = button {
+        # Needs a Faith Data Context!
+        name = "faith_button"
+        size = { 65 65 }
+        tooltipwidget = { faith_tooltip_ruler_designer = {} }
         texture = "[Faith.GetIcon]"
     }
 }
